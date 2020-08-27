@@ -3,7 +3,7 @@ const tmi = require("tmi.js");
 var cf = {
   'auth': {
     'username': 'your_username',
-    'password': 'your_auth_token'
+    'password': 'your_oauth_token'
   },
   'channel': [
     'channel1',
