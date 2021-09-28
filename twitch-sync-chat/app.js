@@ -22,7 +22,10 @@ client.connect();
 
 client.on("chat", (channel, user, message, self) => {
   if(user.username == cf.auth.username && !self){
-    cf.channel.forEach(f);
+    console.log(message);
+    if(message.substring(message.length-1,message.length)!="."){
+      cf.channel.forEach(f);
+    }
     function f(ch){
       if(ch !== channel){
         client.say(ch, message);
